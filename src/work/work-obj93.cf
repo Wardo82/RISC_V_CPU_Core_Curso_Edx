@@ -1,0 +1,10 @@
+v 4
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "3_decoder.vhd" "40ae7f947a52aeff212628c720d84731e62a3849" "20221213205503.294":
+  entity decoder at 1( 0) + 0 on 63;
+  architecture behavioral of decoder at 18( 503) + 0 on 64;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "1_program_counter.vhd" "e560149b520af092b3ac1144c84669c08d681a97" "20221213205503.268":
+  entity program_counter at 1( 0) + 0 on 59;
+  architecture behavioral of program_counter at 13( 261) + 0 on 60;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "2_instruction_memory.vhd" "246ffa6e36dda261f7c6f9976a6053d288138572" "20221213205503.279":
+  entity instruction_memory at 1( 0) + 0 on 61;
+  architecture behavioral of instruction_memory at 13( 282) + 0 on 62;
