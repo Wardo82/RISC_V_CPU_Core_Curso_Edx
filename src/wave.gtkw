@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Jan 23 22:08:31 2023
+[*]
+[dumpfile] "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/wave.ghw"
+[dumpfile_mtime] "Mon Jan 23 21:53:53 2023"
+[dumpfile_size] 2971
+[savefile] "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/wave.gtkw"
+[timestart] 0
+[size] 1206 736
+[pos] -51 -51
+*-25.579329 120800000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.main_core_tb.
+[treeopen] top.main_core_tb.uut.
+[sst_width] 233
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 191
+@29
+top.main_core_tb.i_clk
+@22
+#{top.main_core_tb.uut.s_instruction[31:0]} top.main_core_tb.uut.s_instruction[31] top.main_core_tb.uut.s_instruction[30] top.main_core_tb.uut.s_instruction[29] top.main_core_tb.uut.s_instruction[28] top.main_core_tb.uut.s_instruction[27] top.main_core_tb.uut.s_instruction[26] top.main_core_tb.uut.s_instruction[25] top.main_core_tb.uut.s_instruction[24] top.main_core_tb.uut.s_instruction[23] top.main_core_tb.uut.s_instruction[22] top.main_core_tb.uut.s_instruction[21] top.main_core_tb.uut.s_instruction[20] top.main_core_tb.uut.s_instruction[19] top.main_core_tb.uut.s_instruction[18] top.main_core_tb.uut.s_instruction[17] top.main_core_tb.uut.s_instruction[16] top.main_core_tb.uut.s_instruction[15] top.main_core_tb.uut.s_instruction[14] top.main_core_tb.uut.s_instruction[13] top.main_core_tb.uut.s_instruction[12] top.main_core_tb.uut.s_instruction[11] top.main_core_tb.uut.s_instruction[10] top.main_core_tb.uut.s_instruction[9] top.main_core_tb.uut.s_instruction[8] top.main_core_tb.uut.s_instruction[7] top.main_core_tb.uut.s_instruction[6] top.main_core_tb.uut.s_instruction[5] top.main_core_tb.uut.s_instruction[4] top.main_core_tb.uut.s_instruction[3] top.main_core_tb.uut.s_instruction[2] top.main_core_tb.uut.s_instruction[1] top.main_core_tb.uut.s_instruction[0]
+[pattern_trace] 1
+[pattern_trace] 0

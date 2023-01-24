@@ -46,7 +46,7 @@ begin
     process (i_clk)
 	begin
 		if rising_edge(i_clk) then
-			o_data <= c_first_test(to_integer(unsigned(i_address)));
+			o_data <= c_first_test(to_integer(unsigned(i_address)) / 4);
 		end if;
 	end process;
 
