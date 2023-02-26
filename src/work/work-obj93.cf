@@ -1,24 +1,24 @@
 v 4
-file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "1_program_counter.vhd" "e560149b520af092b3ac1144c84669c08d681a97" "20230124213146.326":
-  entity program_counter at 1( 0) + 0 on 938;
-  architecture behavioral of program_counter at 13( 261) + 0 on 939;
-file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "main_core.vhd" "5bbaaf338c742d8445792494c295e27f96ad3155" "20230124213146.383":
-  entity main_core at 1( 0) + 0 on 948;
-  architecture behavioral of main_core at 14( 219) + 0 on 949;
-file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "5_arithmetic_logic_unit.vhd" "9f1bc20ce56515e315c7c8f5e69bd221120e2ca1" "20230124213146.374":
-  entity alu at 1( 0) + 0 on 946;
-  architecture behavioral of alu at 19( 503) + 0 on 947;
-file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "4_register_file.vhd" "ea828d64c1ee5d28c0104938faab864e3b22ef1c" "20230124213146.363":
-  entity register_file at 1( 0) + 0 on 944;
-  architecture behavioral of register_file at 21( 664) + 0 on 945;
-file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "3_decoder.vhd" "13405ae068cc0f6a0a5bad3c0ff154fda97e9481" "20230124213146.352":
-  entity decoder at 1( 0) + 0 on 942;
-  architecture behavioral of decoder at 19( 523) + 0 on 943;
-file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "2_instruction_memory.vhd" "3db8c9691a5ef7dcd55997ea2c1c7577c59d5325" "20230124213146.338":
-  entity instruction_memory at 1( 0) + 0 on 940;
-  architecture behavioral of instruction_memory at 13( 282) + 0 on 941;
-file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "core_buses.vhd" "a3e0037b86a0fc75783e3498093704efafb4ab6f" "20230124213146.310":
-  package core_buses at 1( 0) + 0 on 937;
-file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "main_core_tb.vhd" "4435ae1e7d571b249c47fa0517509593fc0f3741" "20230124213146.391":
-  entity main_core_tb at 1( 0) + 0 on 950;
-  architecture behavior of main_core_tb at 8( 111) + 0 on 951;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "1_program_counter.vhd" "1b195c70968a77982ba21cd7b36b649f2589bd06" "20230226163507.103":
+  entity program_counter at 1( 0) + 0 on 1506;
+  architecture behavioral of program_counter at 18( 540) + 0 on 1507;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "main_core.vhd" "25b7ccdccd1059182850735fe653feb7b9b958b3" "20230226163507.170":
+  entity main_core at 1( 0) + 0 on 1516;
+  architecture behavioral of main_core at 14( 219) + 0 on 1517;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "5_arithmetic_logic_unit.vhd" "264940debee9e954d7c118bbc82d526e97c87b61" "20230226163507.155":
+  entity alu at 1( 0) + 0 on 1514;
+  architecture behavioral of alu at 22( 650) + 0 on 1515;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "4_register_file.vhd" "9adba87c50fea9cfcfd63e0dc88a753ef0c46a88" "20230226163507.141":
+  entity register_file at 1( 0) + 0 on 1512;
+  architecture behavioral of register_file at 21( 664) + 0 on 1513;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "3_decoder.vhd" "d0892313cbcacb4f83c77fc1e8c42995e414a7a8" "20230226163507.130":
+  entity decoder at 1( 0) + 0 on 1510;
+  architecture behavioral of decoder at 25( 772) + 0 on 1511;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "2_instruction_memory.vhd" "3db8c9691a5ef7dcd55997ea2c1c7577c59d5325" "20230226163507.115":
+  entity instruction_memory at 1( 0) + 0 on 1508;
+  architecture behavioral of instruction_memory at 13( 282) + 0 on 1509;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "core_buses.vhd" "560b36c955b6ad80dbfd540656ca21380924b747" "20230226163507.088":
+  package core_buses at 1( 0) + 0 on 1505;
+file "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/" "main_core_tb.vhd" "4435ae1e7d571b249c47fa0517509593fc0f3741" "20230226163507.177":
+  entity main_core_tb at 1( 0) + 0 on 1518;
+  architecture behavior of main_core_tb at 8( 111) + 0 on 1519;

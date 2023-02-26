@@ -28,19 +28,18 @@ begin
     begin
         if rising_edge(i_clk) then
             if (i_reset = '0') then
-                if i_read_enable1 = '1' then
-                    o_read_data1 <= registers(to_integer(unsigned(i_read_index1)));
-                end if;
-                if i_read_enable2 = '1' then
-                    o_read_data2 <= registers(to_integer(unsigned(i_read_index2)));
-                end if;
-                if i_write_enable = '1' then
+                
+                if (i_write_enable = '1') then
                     registers(to_integer(unsigned(i_write_index))) <= i_write_data;
-                end if ;
+                end if;
             else
                 registers <= (others => x"00000000");
             end if;
         end if;
     end process;
 
+    o_read_data1 <= registers(to_integer(unsigned(i_read_index1))) when (i_read_enable1 = '1')
+                    else x"00000000";
+    o_read_data2 <= registers(to_integer(unsigned(i_read_index2))) when (i_read_enable2 = '1')
+                    else x"00000000";
 end behavioral ; -- behavioral

@@ -6,6 +6,8 @@ package core_buses is
     -- Instruction flag bus: It contains a flag for each instruction so that the decoder can 
     -- tell the ALU which instruction to execute.
     type instruction_type_bus is record
+        is_jal   : boolean;
+        is_jalr  : boolean;
         is_beq   : boolean;
         is_bne   : boolean;
         is_blt   : boolean;

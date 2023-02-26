@@ -4,8 +4,13 @@ use ieee.numeric_std.all;
 
 entity program_counter is
     port (
-        i_clk  : in std_logic;
-        i_reset: in std_logic;
+        i_clk             : in std_logic;
+        i_reset           : in std_logic;
+        i_taken_br        : in boolean; 
+--        i_jal             : in std_logic;
+        i_br_tgt_pc       : in std_logic_vector (31 downto 0);
+--        i_jalr            : in std_logic;
+--        i_jalr_tgt_pc     : in std_logic_vector (31 downto 0);
         o_program_counter : out std_logic_vector (31 downto 0)
     );
 end program_counter;
@@ -22,7 +27,13 @@ begin
             if i_reset = '1' then
                 s_next_pc <= X"00000000";
             else
-                s_next_pc <= std_logic_vector(unsigned(s_next_pc) + 4);
+                if i_taken_br then -- or i_jal = '1' then
+                    s_next_pc <= i_br_tgt_pc;
+                --elsif i_jalr = '1' then
+                --    s_next_pc <= i_jalr_tgt_pc;
+                else
+                    s_next_pc <= std_logic_vector(unsigned(s_next_pc) + 4);
+                end if;
             end if;
         end if;
     end process;
@@ -30,11 +41,6 @@ begin
     o_program_counter <= s_next_pc;
 
     -- Branching logic
-
-    -- taken_br = src1_value comparisson src2_value;
-    -- br_tgt_pc = s_next_program_counter + immediate;
-    -- algo así, ahora no recuerdo:
-    -- o_program_counter <= 
-    --    taken_br ? br_tgt_pc : s_next_program_counter + 4;
     
+
 end behavioral;

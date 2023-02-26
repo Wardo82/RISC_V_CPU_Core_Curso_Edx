@@ -9,8 +9,14 @@ entity decoder is
         i_clk         : in std_logic;
         i_reset       : in std_logic;
         i_instruction : in std_logic_vector(31 downto 0);
+        o_rd_valid  : out std_logic;
+        o_rd        : out std_logic_vector(4 downto 0);
+        o_funct3_valid: out std_logic;
+        o_imm_valid   : out std_logic;
         o_immediate : out std_logic_vector(31 downto 0);
+        o_rs1_valid   : out std_logic;
         o_register1 : out std_logic_vector(4 downto 0);
+        o_rs2_valid   : out std_logic;
         o_register2 : out std_logic_vector(4 downto 0);
         o_instruction_type_bus : out instruction_type_bus
     );
@@ -28,18 +34,10 @@ architecture behavioral of decoder is
     signal is_inst_aux : std_logic;
 
     signal funct3: std_logic_vector(2 downto 0);
-    signal rs1   : std_logic_vector(4 downto 0);
-    signal rs2   : std_logic_vector(4 downto 0);
-    signal rd    : std_logic_vector(4 downto 0);
     signal opcode: std_logic_vector(6 downto 0);
+    signal rd    : std_logic_vector(4 downto 0);
+    signal immediate: std_logic_vector(31 downto 0);
 
-    signal funct3_valid: std_logic;
-    signal rs1_valid   : std_logic;
-    signal rs2_valid   : std_logic;
-    signal rd_valid    : std_logic;
-    signal imm_valid   : std_logic;
-
-    signal imm         : std_logic_vector(31 downto 0);
     signal dec_bits    : std_logic_vector(10 downto 0);
 
 begin
@@ -61,18 +59,18 @@ begin
                         else '0';
     -- Segundo: Decode Logic: Instruction Fields
     funct3 <= i_instruction(14 downto 12);
-    rs1 <= i_instruction(19 downto 15);
-    rs2 <= i_instruction(24 downto 20);
+    o_register1 <= i_instruction(19 downto 15);
+    o_register2 <= i_instruction(24 downto 20);
     rd <= i_instruction(11 downto 7);
     opcode <= i_instruction(6 downto 0);
 
-    funct3_valid <= is_r_instruction or is_i_instruction or is_s_instruction or is_b_instruction;
-    rs1_valid    <= is_r_instruction or is_i_instruction or is_s_instruction or is_b_instruction;
-    rs2_valid    <= is_r_instruction or is_s_instruction or is_b_instruction;
-    rd_valid     <= (is_r_instruction or is_i_instruction or is_u_instruction or is_j_instruction) when (rd /= b"000000") else '0';
-    imm_valid    <= not is_r_instruction;
+    o_funct3_valid <= is_r_instruction or is_i_instruction or is_s_instruction or is_b_instruction;
+    o_rs1_valid    <= is_r_instruction or is_i_instruction or is_s_instruction or is_b_instruction;
+    o_rs2_valid    <= is_r_instruction or is_s_instruction or is_b_instruction;
+    o_rd_valid     <= (is_r_instruction or is_i_instruction or is_u_instruction or is_j_instruction) when (rd /= b"000000") else '0';
+    o_imm_valid    <= not is_r_instruction;
 
-    imm     <= (31 downto 11 => i_instruction(31)) & i_instruction(30 downto 20)                              when (is_i_instruction = '1') else
+    o_immediate     <= (31 downto 11 => i_instruction(31)) & i_instruction(30 downto 20)                              when (is_i_instruction = '1') else
                (31 downto 11 => i_instruction(31)) & i_instruction(30 downto 25) & i_instruction(11 downto 7) when (is_s_instruction = '1') else
                (31 downto 12 => i_instruction(31)) & i_instruction(7) & i_instruction(30 downto 25) & i_instruction(11 downto 8) & '0' when (is_b_instruction = '1') else
                i_instruction(31 downto 12) & (11 downto 0 => '0') when (is_u_instruction = '1') else
@@ -89,6 +87,6 @@ begin
     o_instruction_type_bus.is_bgeu  <= (dec_bits = "01111100011" or dec_bits = "11111100011");
     o_instruction_type_bus.is_addi  <= (dec_bits = "00000010011" or dec_bits = "10000010011" );
     o_instruction_type_bus.is_add   <= (dec_bits = "00000110011");
-    o_immediate <= imm;
-    
+    o_rd <= rd;
+
 end behavioral ; -- behavioral

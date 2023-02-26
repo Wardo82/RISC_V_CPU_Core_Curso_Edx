@@ -1,5 +1,5 @@
 GHDL=ghdl
-FLAGS=--workdir=work
+FLAGS=--workdir=work -fsynopsys
 
 all:
 	@$(GHDL) -a $(FLAGS) core_buses.vhd

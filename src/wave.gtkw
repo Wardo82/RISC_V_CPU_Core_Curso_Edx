@@ -1,25 +1,45 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Mon Jan 23 22:08:31 2023
+[*] Sun Jan 29 18:28:58 2023
 [*]
 [dumpfile] "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/wave.ghw"
-[dumpfile_mtime] "Mon Jan 23 21:53:53 2023"
-[dumpfile_size] 2971
+[dumpfile_mtime] "Sun Jan 29 18:16:07 2023"
+[dumpfile_size] 7682
 [savefile] "/home/wardo/repos/RISC_V_CPU_Core_Curso_Edx/src/wave.gtkw"
-[timestart] 0
-[size] 1206 736
-[pos] -51 -51
-*-25.579329 120800000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[timestart] 8650000
+[size] 906 731
+[pos] 0 -51
+*-22.579329 20000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.main_core_tb.
 [treeopen] top.main_core_tb.uut.
+[treeopen] top.main_core_tb.uut.imem.
+[treeopen] top.main_core_tb.uut.reg_file.
 [sst_width] 233
-[signals_width] 182
+[signals_width] 219
 [sst_expanded] 1
-[sst_vpaned_height] 191
-@29
+[sst_vpaned_height] 162
+@28
 top.main_core_tb.i_clk
-@22
+top.main_core_tb.i_rst
 #{top.main_core_tb.uut.s_instruction[31:0]} top.main_core_tb.uut.s_instruction[31] top.main_core_tb.uut.s_instruction[30] top.main_core_tb.uut.s_instruction[29] top.main_core_tb.uut.s_instruction[28] top.main_core_tb.uut.s_instruction[27] top.main_core_tb.uut.s_instruction[26] top.main_core_tb.uut.s_instruction[25] top.main_core_tb.uut.s_instruction[24] top.main_core_tb.uut.s_instruction[23] top.main_core_tb.uut.s_instruction[22] top.main_core_tb.uut.s_instruction[21] top.main_core_tb.uut.s_instruction[20] top.main_core_tb.uut.s_instruction[19] top.main_core_tb.uut.s_instruction[18] top.main_core_tb.uut.s_instruction[17] top.main_core_tb.uut.s_instruction[16] top.main_core_tb.uut.s_instruction[15] top.main_core_tb.uut.s_instruction[14] top.main_core_tb.uut.s_instruction[13] top.main_core_tb.uut.s_instruction[12] top.main_core_tb.uut.s_instruction[11] top.main_core_tb.uut.s_instruction[10] top.main_core_tb.uut.s_instruction[9] top.main_core_tb.uut.s_instruction[8] top.main_core_tb.uut.s_instruction[7] top.main_core_tb.uut.s_instruction[6] top.main_core_tb.uut.s_instruction[5] top.main_core_tb.uut.s_instruction[4] top.main_core_tb.uut.s_instruction[3] top.main_core_tb.uut.s_instruction[2] top.main_core_tb.uut.s_instruction[1] top.main_core_tb.uut.s_instruction[0]
+#{top.main_core_tb.uut.dec.dec_bits[10:0]} top.main_core_tb.uut.dec.dec_bits[10] top.main_core_tb.uut.dec.dec_bits[9] top.main_core_tb.uut.dec.dec_bits[8] top.main_core_tb.uut.dec.dec_bits[7] top.main_core_tb.uut.dec.dec_bits[6] top.main_core_tb.uut.dec.dec_bits[5] top.main_core_tb.uut.dec.dec_bits[4] top.main_core_tb.uut.dec.dec_bits[3] top.main_core_tb.uut.dec.dec_bits[2] top.main_core_tb.uut.dec.dec_bits[1] top.main_core_tb.uut.dec.dec_bits[0]
+@420
+top.main_core_tb.uut.s_instruction_type_bus.is_add
+top.main_core_tb.uut.s_instruction_type_bus.is_addi
+top.main_core_tb.uut.s_instruction_type_bus.is_bge
+top.main_core_tb.uut.s_instruction_type_bus.is_blt
+@28
+#{top.main_core_tb.uut.dec.signature[4:0]} top.main_core_tb.uut.dec.signature[4] top.main_core_tb.uut.dec.signature[3] top.main_core_tb.uut.dec.signature[2] top.main_core_tb.uut.dec.signature[1] top.main_core_tb.uut.dec.signature[0]
+top.main_core_tb.uut.dec.is_i_instruction
+top.main_core_tb.uut.dec.is_b_instruction
+top.main_core_tb.uut.reg_file.i_write_enable
+@23
+#{top.main_core_tb.uut.reg_file.i_write_data[31:0]} top.main_core_tb.uut.reg_file.i_write_data[31] top.main_core_tb.uut.reg_file.i_write_data[30] top.main_core_tb.uut.reg_file.i_write_data[29] top.main_core_tb.uut.reg_file.i_write_data[28] top.main_core_tb.uut.reg_file.i_write_data[27] top.main_core_tb.uut.reg_file.i_write_data[26] top.main_core_tb.uut.reg_file.i_write_data[25] top.main_core_tb.uut.reg_file.i_write_data[24] top.main_core_tb.uut.reg_file.i_write_data[23] top.main_core_tb.uut.reg_file.i_write_data[22] top.main_core_tb.uut.reg_file.i_write_data[21] top.main_core_tb.uut.reg_file.i_write_data[20] top.main_core_tb.uut.reg_file.i_write_data[19] top.main_core_tb.uut.reg_file.i_write_data[18] top.main_core_tb.uut.reg_file.i_write_data[17] top.main_core_tb.uut.reg_file.i_write_data[16] top.main_core_tb.uut.reg_file.i_write_data[15] top.main_core_tb.uut.reg_file.i_write_data[14] top.main_core_tb.uut.reg_file.i_write_data[13] top.main_core_tb.uut.reg_file.i_write_data[12] top.main_core_tb.uut.reg_file.i_write_data[11] top.main_core_tb.uut.reg_file.i_write_data[10] top.main_core_tb.uut.reg_file.i_write_data[9] top.main_core_tb.uut.reg_file.i_write_data[8] top.main_core_tb.uut.reg_file.i_write_data[7] top.main_core_tb.uut.reg_file.i_write_data[6] top.main_core_tb.uut.reg_file.i_write_data[5] top.main_core_tb.uut.reg_file.i_write_data[4] top.main_core_tb.uut.reg_file.i_write_data[3] top.main_core_tb.uut.reg_file.i_write_data[2] top.main_core_tb.uut.reg_file.i_write_data[1] top.main_core_tb.uut.reg_file.i_write_data[0]
+@22
+#{top.main_core_tb.uut.reg_file.registers[30][31:0]} top.main_core_tb.uut.reg_file.registers[30][31] top.main_core_tb.uut.reg_file.registers[30][30] top.main_core_tb.uut.reg_file.registers[30][29] top.main_core_tb.uut.reg_file.registers[30][28] top.main_core_tb.uut.reg_file.registers[30][27] top.main_core_tb.uut.reg_file.registers[30][26] top.main_core_tb.uut.reg_file.registers[30][25] top.main_core_tb.uut.reg_file.registers[30][24] top.main_core_tb.uut.reg_file.registers[30][23] top.main_core_tb.uut.reg_file.registers[30][22] top.main_core_tb.uut.reg_file.registers[30][21] top.main_core_tb.uut.reg_file.registers[30][20] top.main_core_tb.uut.reg_file.registers[30][19] top.main_core_tb.uut.reg_file.registers[30][18] top.main_core_tb.uut.reg_file.registers[30][17] top.main_core_tb.uut.reg_file.registers[30][16] top.main_core_tb.uut.reg_file.registers[30][15] top.main_core_tb.uut.reg_file.registers[30][14] top.main_core_tb.uut.reg_file.registers[30][13] top.main_core_tb.uut.reg_file.registers[30][12] top.main_core_tb.uut.reg_file.registers[30][11] top.main_core_tb.uut.reg_file.registers[30][10] top.main_core_tb.uut.reg_file.registers[30][9] top.main_core_tb.uut.reg_file.registers[30][8] top.main_core_tb.uut.reg_file.registers[30][7] top.main_core_tb.uut.reg_file.registers[30][6] top.main_core_tb.uut.reg_file.registers[30][5] top.main_core_tb.uut.reg_file.registers[30][4] top.main_core_tb.uut.reg_file.registers[30][3] top.main_core_tb.uut.reg_file.registers[30][2] top.main_core_tb.uut.reg_file.registers[30][1] top.main_core_tb.uut.reg_file.registers[30][0]
+#{top.main_core_tb.uut.reg_file.registers[14][31:0]} top.main_core_tb.uut.reg_file.registers[14][31] top.main_core_tb.uut.reg_file.registers[14][30] top.main_core_tb.uut.reg_file.registers[14][29] top.main_core_tb.uut.reg_file.registers[14][28] top.main_core_tb.uut.reg_file.registers[14][27] top.main_core_tb.uut.reg_file.registers[14][26] top.main_core_tb.uut.reg_file.registers[14][25] top.main_core_tb.uut.reg_file.registers[14][24] top.main_core_tb.uut.reg_file.registers[14][23] top.main_core_tb.uut.reg_file.registers[14][22] top.main_core_tb.uut.reg_file.registers[14][21] top.main_core_tb.uut.reg_file.registers[14][20] top.main_core_tb.uut.reg_file.registers[14][19] top.main_core_tb.uut.reg_file.registers[14][18] top.main_core_tb.uut.reg_file.registers[14][17] top.main_core_tb.uut.reg_file.registers[14][16] top.main_core_tb.uut.reg_file.registers[14][15] top.main_core_tb.uut.reg_file.registers[14][14] top.main_core_tb.uut.reg_file.registers[14][13] top.main_core_tb.uut.reg_file.registers[14][12] top.main_core_tb.uut.reg_file.registers[14][11] top.main_core_tb.uut.reg_file.registers[14][10] top.main_core_tb.uut.reg_file.registers[14][9] top.main_core_tb.uut.reg_file.registers[14][8] top.main_core_tb.uut.reg_file.registers[14][7] top.main_core_tb.uut.reg_file.registers[14][6] top.main_core_tb.uut.reg_file.registers[14][5] top.main_core_tb.uut.reg_file.registers[14][4] top.main_core_tb.uut.reg_file.registers[14][3] top.main_core_tb.uut.reg_file.registers[14][2] top.main_core_tb.uut.reg_file.registers[14][1] top.main_core_tb.uut.reg_file.registers[14][0]
+#{top.main_core_tb.uut.reg_file.registers[13][31:0]} top.main_core_tb.uut.reg_file.registers[13][31] top.main_core_tb.uut.reg_file.registers[13][30] top.main_core_tb.uut.reg_file.registers[13][29] top.main_core_tb.uut.reg_file.registers[13][28] top.main_core_tb.uut.reg_file.registers[13][27] top.main_core_tb.uut.reg_file.registers[13][26] top.main_core_tb.uut.reg_file.registers[13][25] top.main_core_tb.uut.reg_file.registers[13][24] top.main_core_tb.uut.reg_file.registers[13][23] top.main_core_tb.uut.reg_file.registers[13][22] top.main_core_tb.uut.reg_file.registers[13][21] top.main_core_tb.uut.reg_file.registers[13][20] top.main_core_tb.uut.reg_file.registers[13][19] top.main_core_tb.uut.reg_file.registers[13][18] top.main_core_tb.uut.reg_file.registers[13][17] top.main_core_tb.uut.reg_file.registers[13][16] top.main_core_tb.uut.reg_file.registers[13][15] top.main_core_tb.uut.reg_file.registers[13][14] top.main_core_tb.uut.reg_file.registers[13][13] top.main_core_tb.uut.reg_file.registers[13][12] top.main_core_tb.uut.reg_file.registers[13][11] top.main_core_tb.uut.reg_file.registers[13][10] top.main_core_tb.uut.reg_file.registers[13][9] top.main_core_tb.uut.reg_file.registers[13][8] top.main_core_tb.uut.reg_file.registers[13][7] top.main_core_tb.uut.reg_file.registers[13][6] top.main_core_tb.uut.reg_file.registers[13][5] top.main_core_tb.uut.reg_file.registers[13][4] top.main_core_tb.uut.reg_file.registers[13][3] top.main_core_tb.uut.reg_file.registers[13][2] top.main_core_tb.uut.reg_file.registers[13][1] top.main_core_tb.uut.reg_file.registers[13][0]
+#{top.main_core_tb.uut.reg_file.registers[12][31:0]} top.main_core_tb.uut.reg_file.registers[12][31] top.main_core_tb.uut.reg_file.registers[12][30] top.main_core_tb.uut.reg_file.registers[12][29] top.main_core_tb.uut.reg_file.registers[12][28] top.main_core_tb.uut.reg_file.registers[12][27] top.main_core_tb.uut.reg_file.registers[12][26] top.main_core_tb.uut.reg_file.registers[12][25] top.main_core_tb.uut.reg_file.registers[12][24] top.main_core_tb.uut.reg_file.registers[12][23] top.main_core_tb.uut.reg_file.registers[12][22] top.main_core_tb.uut.reg_file.registers[12][21] top.main_core_tb.uut.reg_file.registers[12][20] top.main_core_tb.uut.reg_file.registers[12][19] top.main_core_tb.uut.reg_file.registers[12][18] top.main_core_tb.uut.reg_file.registers[12][17] top.main_core_tb.uut.reg_file.registers[12][16] top.main_core_tb.uut.reg_file.registers[12][15] top.main_core_tb.uut.reg_file.registers[12][14] top.main_core_tb.uut.reg_file.registers[12][13] top.main_core_tb.uut.reg_file.registers[12][12] top.main_core_tb.uut.reg_file.registers[12][11] top.main_core_tb.uut.reg_file.registers[12][10] top.main_core_tb.uut.reg_file.registers[12][9] top.main_core_tb.uut.reg_file.registers[12][8] top.main_core_tb.uut.reg_file.registers[12][7] top.main_core_tb.uut.reg_file.registers[12][6] top.main_core_tb.uut.reg_file.registers[12][5] top.main_core_tb.uut.reg_file.registers[12][4] top.main_core_tb.uut.reg_file.registers[12][3] top.main_core_tb.uut.reg_file.registers[12][2] top.main_core_tb.uut.reg_file.registers[12][1] top.main_core_tb.uut.reg_file.registers[12][0]
 [pattern_trace] 1
 [pattern_trace] 0
